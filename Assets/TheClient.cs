@@ -7,7 +7,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class GeoData
+public class GyroData
 {
     public float X;
 
@@ -72,7 +72,7 @@ public class TheClient : MonoBehaviour
             using var client = new UdpClient();
 
             var gyro = Input.gyro.attitude;
-            var message = JsonUtility.ToJson(new GeoData { X = gyro.x, Y = gyro.y, Z = gyro.z });
+            var message = JsonUtility.ToJson(new GyroData { X = gyro.x, Y = gyro.y, Z = gyro.z });
 
             _gyro.text = message;
 
