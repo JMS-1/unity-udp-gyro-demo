@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/TheUI.uss?fileID=7433441132597879392&amp;guid=8b570921a5e2d778a87c5fbf545bbea8&amp;type=3#TheUI" />
+    <ui:TextField picking-mode="Ignore" label="IP" value="192.168.178.22:30400" name="TheIP" max-length="-1" class="label" />
+    <ui:Button text="Start/Stop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TheButton" style="align-self: center;" />
+    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GeoData" />
+</ui:UXML>
